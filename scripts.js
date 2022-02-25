@@ -7,10 +7,22 @@ if ( userInput === "burrito" ) {
 }
 */
 
-let userInput;
+/*let userInput;
 userInput = prompt("What color is the sky?", "Type your answer here.");
 if ( userInput === "blue" ) {
   $("#response").html("You're smarter than a fifth grader!");
 } else {
   $("#response").html("Go back to kindergarten.");
+}
+*/
+
+let makeABurrito;
+makeABurrito = function(beansVariable){
+  let beansResponse;
+  prepareTortilla();
+  addBeans();
+  addOnionsandCilantro();
+  beansResponse; = "You ordered " + beandResponse + " beans. Good choice!";
+  $("#response").html(beansResponse);
+  rollUpTortilla();
 }
