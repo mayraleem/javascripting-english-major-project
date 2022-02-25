@@ -10,7 +10,7 @@ if ( userInput === "burrito" ) {
 let userInput;
 userInput = prompt("What color is the sky?", "Type your answer here.");
 if ( userInput === "blue" ){
-  $("#response").html("You're smarter than a fifth grader :D");
+  $("#response").html("You're smarter than a fifth grader!");
 } else {
-  $("#response").html("Go back to kindergarten >:();
+  $("#response").html("Go back to kindergarten.);
                       }
