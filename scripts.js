@@ -22,7 +22,7 @@ makeABurrito = function(beansVariable){
   prepareTortilla();
   addBeans();
   addOnionsandCilantro();
-  beansResponse; = "You ordered " + beandResponse + " beans. Good choice!";
+  beansResponse; = "You ordered " + beansResponse + " beans. Good choice!";
   $("#response").html(beansResponse);
   rollUpTortilla();
 }
