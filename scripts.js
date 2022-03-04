@@ -41,7 +41,7 @@ myBurritoObject = {
   beans: "pinto",
   habaneroSauceSquirts: 3
 };
-$(#response).html(myBurritoObject["tortilla"]);
+$(#response).html(myBurritoObject.tortilla);
 
 
 
