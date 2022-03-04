@@ -54,9 +54,9 @@ myBurritoObject = {
   habaneroSauceSquirts: myHabaneroSauceSquirts,
   spiciness: function(){
     if (myHabaneroSauceSquirts > 0){
-      alert("This is a spicy burrito!);
+      alert("This is a spicy burrito!");
    } else {
-      alert("This is a mild burrito.);
+      alert("This is a mild burrito.");
    }
   }
 };
