@@ -51,9 +51,9 @@ myBurritoObject = {
   tortilla: "wheat",
   guacamole: true,
   beans: "pinto", 
-  habaneroSauceSquirts: myHabanerSauceSquirts,
+  habaneroSauceSquirts: myHabaneroSauceSquirts,
   spiciness: function(){
-    if (myHabanerSauceSquirts > 0){
+    if (myHabaneroSauceSquirts > 0){
       alert("This is a spicy burrito!);
    } else {
       alert("This is a mild burrito.);
