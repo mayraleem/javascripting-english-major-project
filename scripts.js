@@ -27,6 +27,7 @@ blackBeans = "black";
 makeABurrito(blackBeans);
 */
 
+
 /*let arrayOfStrings, arrayOfNumbers, arrayMixed;
 arrayOfStrings = ["a", "b", "c"};
 arrayOfNumbers = [1, 2, 3];
@@ -34,7 +35,7 @@ arrayMixed = ["a", 1, null, true, arrayOfNumbers, [4.5, 5.6]];
 $(#response).html(arrayOfStrings[2]);
  */                 
 
-let myBurritoObject;
+/*let myBurritoObject;
 myBurritoObject = {
   tortilla: "wheat",
   guacamole: true,
@@ -42,7 +43,30 @@ myBurritoObject = {
   habaneroSauceSquirts: 3
 };
 $(#response).html(myBurritoObject.tortilla);
+*/
 
+let myHabaneroSauceSquirts, myBurritoObject;
+myHabaneroSauceSquirts = 3
+myBurritoObject = {
+  tortilla: "wheat",
+  guacamole: true,
+  beans: "pinto", 
+  habaneroSauceSquirts: myHabanerSauceSquirts,
+  spiciness: function(){
+    if (myHabanerSauceSquirts > 0){
+      alert("This is a spicy burrito!);
+   } else {
+      alert("This is a mild burrito.);
+   }
+  }
+};
+$("#response").html("Your burrito has " + 
+                    myBurritoObject.habaneroSauceSquirts + 
+                    " squirts of habanero!";
+              myBurritoObject.spiciness();
+                    
+
+  
 
 
 
