@@ -27,3 +27,9 @@ tenThousandthPolygon = L.polygon(tenThousandth, {
                                   fillColor: "#fdf6e3"
                                 }
                         ).addTo(firstMap);
+thousandth = [[washingtonSquarePark.lat + 0.001, washingtonSquarePark.lng + 0.001],
+              [washingtonSquarePark.lat + 0.001, washingtonSquarePark.lng - 0.001],
+              [washingtonSquarePark.lat - 0.001, washingtonSquarePark.lng - 0.001],
+              [washingtonSquarePark.lat - 0.001, washingtonSquarePark.lng + 0.001]];
+thousandthPolyline = L.polyline(thousandth, {color: "#d33682"}
+                      ).addTo(firstMap);
