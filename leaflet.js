@@ -27,13 +27,14 @@ tenThousandth = [[40.7307, -73.9976], [40.7307, -73.9974],
                                   fillColor: "#fdf6e3"
                                 }
                         ).addTo(firstMap);
-*/
+
 thousandth = [[washingtonSquarePark.lat + 0.001, washingtonSquarePark.lng + 0.001],
               [washingtonSquarePark.lat + 0.001, washingtonSquarePark.lng - 0.001],
               [washingtonSquarePark.lat - 0.001, washingtonSquarePark.lng - 0.001],
               [washingtonSquarePark.lat - 0.001, washingtonSquarePark.lng + 0.001]];
 thousandthPolyline = L.polyline(thousandth, {color: "#d33682"}
                       ).addTo(firstMap);
+*/
 let circle;
 circle = L.circle(washingtonSquarePark, bobstLibrary {radius: 100,
                                          color: "#859900",
