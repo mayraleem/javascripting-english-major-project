@@ -20,7 +20,7 @@ firstMap.panTo(bobstCoords);
 let washingtonSquarePark, washingtonSquareParkMarker;
 /*let tenThousandth, tenThousandthPolygon, thousandth, thousandthPolyline;*/
 washingtonSquarePark = L.latLng(40.730833, -73.9975);
-washingtonSquareParkMarker = L.marker(washingtonSquarePark).addTo(firstMap);
+washingtonSquareParkMarker = L.marker(washingtonSquarePark).bindPopup("This is Washington Square Park.").addTo(firstMap);
 /*tenThousandth = [[40.7307, -73.9976], [40.7307, -73.9974], 
                  [40.7309, -73.9974], [40.7309, -73.9976]];
 tenThousandthPolygon = L.polygon(tenThousandth, {
