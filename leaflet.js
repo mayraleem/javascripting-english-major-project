@@ -10,9 +10,9 @@ tileLayer.addTo(firstMap);
 firstMap.setView([40.730833, -73.9975], 16);
 
 let bobstLibrary, bobstLibraryMarker, washingtonSquarePark, washingtonSquareParkMarker;
-bobstLibrary = L.latLng([40.729444, -73.997222]);
+bobstLibrary = L.latLng(40.729444, -73.997222);
 bobstLibraryMarker = L.marker(bobstLibrary).bindPopup("This is Bobst Library.").addTo(firstMap);
-washingtonSquarePark = L.latLng([40.730833, -73.9975]);
+washingtonSquarePark = L.latLng(40.730833, -73.9975);
 washingtonSquareParkMarker = L.marker(washingtonSquarePark).bindPopup("This is Washington Square Park.").addTo(firstMap);
 
 let circle;
@@ -23,8 +23,8 @@ circle = L.circle(washingtonSquarePark, bobstLibrary {radius: 100,
                                          fillOpacity: 0.25}
           ).addTo(firstMap);
 
-/*let brooklynMuseum, brooklynMuseumMarker;
-brooklynMuseum = L.latLng([40.6712, -73.9639]);
+let brooklynMuseum, brooklynMuseumMarker;
+brooklynMuseum = L.latLng(40.6712, -73.9639);
 brooklynMuseumMarker = L.marker(brooklynMuseum).bindPopup("This is the Brooklyn Museum.").addTo(firstMap);
 
 let circle;
@@ -34,7 +34,7 @@ circle = L.circle(brooklynMuseum {radius: 150,
                                     opacity: 0.9,
                                     fillOpacity: 0.25}
             ).addTo(firstMap);
-*/                               
+                              
                                 
 /*let firstMap, tileLayer;
 firstMap = L.map("first-map");
