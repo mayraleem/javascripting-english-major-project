@@ -34,5 +34,5 @@ circle = L.circle(brooklynMuseum {radius: 150,
                                     opacity: 0.9,
                                     fillOpacity: 0.25}
             ).addTo(firstMap);
-                              
+                            */  
                                 
