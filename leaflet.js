@@ -13,7 +13,7 @@ let bobstLibrary, bobstLibraryMarker, washingtonSquarePark, washingtonSquarePark
 bobstLibrary = L.latLng([40.729444, -73.997222]);
 bobstLibraryMarker = L.marker(bobstLibrary).bindPopup("This is Bobst Library.").addTo(firstMap);
 washingtonSquarePark = L.latLng([40.730833, -73.9975]);
-washingtonSquareParkMarker = L.marker(washintonSquarePark).bindPopup("This is Washington Square Park.").addTo(firstMap);
+washingtonSquareParkMarker = L.marker(washingtonSquarePark).bindPopup("This is Washington Square Park.").addTo(firstMap);
 
 let circle;
 circle = L.circle(washingtonSquarePark, bobstLibrary {radius: 100,
@@ -32,6 +32,7 @@ circle = L.circle(brooklynMuseum {radius: 150,
                                     fillColor: "#859900",
                                     opacity: 0.9,
                                     fillOpacity: 0.25}
+            ).addTo(firstMap);
                                 
                                 
 /*let firstMap, tileLayer;
