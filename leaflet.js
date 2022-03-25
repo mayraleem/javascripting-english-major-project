@@ -15,7 +15,13 @@ bobstLibraryMarker = L.marker(bobstLibrary).bindPopup("This is Bobst Library.").
 washingtonSquarePark = L.latLng([40.730833, -73.9975]);
 washingtonSquareParkMarker = L.marker(washintonSquarePark).bindPopup("This is Washington Square Park.").addTo(firstMap);
 
-
+let circle;
+circle = L.circle(washingtonSquarePark, bobstLibrary {radius: 100,
+                                         color: "#859900",
+                                         fillColor: "#cb4b16",
+                                         opacity: 0.9,
+                                         fillOpacity: 0.25}
+          ).addTo(firstMap);
 
 /*let firstMap, tileLayer;
 firstMap = L.map("first-map");
