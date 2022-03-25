@@ -1,4 +1,4 @@
-let firstMap, tileLayer;
+/*let firstMap, tileLayer;
 firstMap = L.map("first-map");
 tileLayer =
 L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png", {
@@ -21,7 +21,7 @@ let washingtonSquarePark, washingtonSquareParkMarker;
 washingtonSquarePark = L.latLng(40.730833, -73.9975);
 washingtonSquareParkMarker = L.marker(washingtonSquarePark).bindPopup("This is Washington Square Park.").addTp(firstMap);
 
-/*let washingtonSquarePark, washingtonSquareParkMarker;
+let washingtonSquarePark, washingtonSquareParkMarker;
 let tenThousandth, tenThousandthPolygon, thousandth, thousandthPolyline;
 washingtonSquarePark = L.latLng(40.730833, -73.9975);
 washingtonSquareParkMarker = L.marker(washingtonSquarePark).bindPopup("This is Washington Square Park.").addTo(firstMap);
@@ -47,3 +47,4 @@ circle = L.circle(washingtonSquarePark, bobstLibrary {radius: 100,
                                          opacity: 0.9,
                                          fillOpacity: 0.25}
           ).addTo(firstMap);
+*/
