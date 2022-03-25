@@ -16,7 +16,7 @@ washingtonSquarePark = L.latLng(40.730833, -73.9975);
 washingtonSquareParkMarker = L.marker(washingtonSquarePark).bindPopup("This is Washington Square Park.").addTo(firstMap);
 
 let circle;
-circle = L.circle(washingtonSquarePark, bobstLibrary, {radius: 200,
+circle = L.circle(bobstLibrary, washingtonSquarePark, {radius: 200,
                                                       color: "#859900",
                                                       fillColor: "#cb4b16",
                                                       opacity: 0.9,
