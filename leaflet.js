@@ -30,10 +30,10 @@ circle = L.circle(washingtonSquarePark, {radius: 200,
                                          fillOpacity: 0.25}
           ).addTo(firstMap);
 
-/* let brooklynMuseum, brooklynMuseumMarker, theMet, theMetMarker, moma, momaMarker;
+/*let brooklynMuseum, brooklynMuseumMarker, theMet, theMetMarker, moma, momaMarker;
 brooklynMuseum = L.latLng(40.6712, -73.9639);
 brooklynMuseumMarker = L.marker(brooklynMuseum).bindPopup("This is the Brooklyn Museum.").addTo(firstMap);
-theMet = L.latLmg(40.7794, -73.9632);
+theMet = L.latLng(40.7794, -73.9632);
 theMetMarker = L.marker(theMet).bindPopup("This is the Metropolitan Museum of Art, AKA, The Met.").addTo(firstMap);
 moma = L.latLng(40.7614, -73.9776);
 momaMarker = L.marker(moma).bindPopup("This is the Museum of Modern Art.").addTo(firstMap);
