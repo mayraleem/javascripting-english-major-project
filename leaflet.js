@@ -22,7 +22,7 @@ washingtonSquareParkMarker = L.marker(washingtonSquarePark).bindPopup("This is W
                                  opacity: 0.9,
                                  fillOpacity: 0.25}
               ).addTo(firstMap);
-      let circle;
+      /*let circle;
       circle = L.circle(washingtonSquarePark, {radius: 100,
                                          color: "#859900",
                                          fillColor: "#cb4b16",
@@ -30,7 +30,7 @@ washingtonSquareParkMarker = L.marker(washingtonSquarePark).bindPopup("This is W
                                          fillOpacity: 0.25}
               ).addTo(firstMap);
 
-/*let brooklynMuseum, brooklynMuseumMarker, theMet, theMetMarker, moma, momaMarker;
+let brooklynMuseum, brooklynMuseumMarker, theMet, theMetMarker, moma, momaMarker;
 brooklynMuseum = L.latLng(40.6712, -73.9639);
 brooklynMuseumMarker = L.marker(brooklynMuseum).bindPopup("This is the Brooklyn Museum.").addTo(firstMap);
 theMet = L.latLng(40.7794, -73.9632);
