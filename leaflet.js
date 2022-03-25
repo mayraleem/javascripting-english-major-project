@@ -23,7 +23,7 @@ circle = L.circle(bobstLibrary, washingtonSquarePark, {radius: 200,
                                                       fillOpacity: 0.25}
           ).addTo(firstMap);
 
-let brooklynMuseum, brooklynMuseumMarker, theMet, theMetMarker, moma, momaMarker;
+/* let brooklynMuseum, brooklynMuseumMarker, theMet, theMetMarker, moma, momaMarker;
 brooklynMuseum = L.latLng(40.6712, -73.9639);
 brooklynMuseumMarker = L.marker(brooklynMuseum).bindPopup("This is the Brooklyn Museum.").addTo(firstMap);
 theMet = L.latLmg(40.7794, -73.9632);
@@ -38,5 +38,5 @@ circle = L.circle(brooklynMuseum, theMet, moma, {radius: 150,
                                     opacity: 0.9,
                                     fillOpacity: 0.25}
             ).addTo(firstMap);
-                              
+*/
                                 
