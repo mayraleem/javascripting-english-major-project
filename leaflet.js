@@ -7,7 +7,7 @@ L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
       maxZoom: 18
     });
 tileLayer.addTo(firstMap);
-firstMap.setView([40.75536, -73.967412], 12);
+firstMap.setView([40.7447, -73.9755], 12);
 
 let bobstLibrary, bobstLibraryMarker, washingtonSquarePark, washingtonSquareParkMarker, brooklynMuseum, brooklynMuseumMarker, theMet, theMetMarker, moma, momaMarker, barrioMuseo, barrioMuseoMarker;
 bobstLibrary = L.latLng(40.729444, -73.997222);
