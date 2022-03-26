@@ -30,30 +30,12 @@ barrioMuseoMarker = L.marker(barrioMuseo).bindPopup("This is Museo del Barrio.")
                                  opacity: 0.9,
                                  fillOpacity: 0.25}
               ).addTo(firstMap);
-      /*let circle;
+      let circle;
       circle = L.circle(washingtonSquarePark, {radius: 100,
                                                color: "#859900",
                                                fillColor: "#cb4b16",
                                                opacity: 0.9,
                                                fillOpacity: 0.25}
               ).addTo(firstMap);
-   
-           
 
-let brooklynMuseum, brooklynMuseumMarker, theMet, theMetMarker, moma, momaMarker;
-brooklynMuseum = L.latLng(40.6712, -73.9639);
-brooklynMuseumMarker = L.marker(brooklynMuseum).bindPopup("This is the Brooklyn Museum.").addTo(firstMap);
-theMet = L.latLng(40.7794, -73.9632);
-theMetMarker = L.marker(theMet).bindPopup("This is the Metropolitan Museum of Art, AKA, The Met.").addTo(firstMap);
-moma = L.latLng(40.7614, -73.9776);
-momaMarker = L.marker(moma).bindPopup("This is the Museum of Modern Art.").addTo(firstMap);
-
-let circle;
-circle = L.circle(brooklynMuseum, theMet, moma, {radius: 150,
-                                    color: "#ff008c",
-                                    fillColor: "#859900",
-                                    opacity: 0.9,
-                                    fillOpacity: 0.25}
-            ).addTo(firstMap);
-*/
                                 
