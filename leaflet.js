@@ -9,11 +9,13 @@ L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
 tileLayer.addTo(firstMap);
 firstMap.setView([40.75536, -73.967412], 12);
 
-let bobstLibrary, bobstLibraryMarker, washingtonSquarePark, washingtonSquareParkMarker, theMet, theMetMarker, moma, momaMarker;
+let bobstLibrary, bobstLibraryMarker, washingtonSquarePark, washingtonSquareParkMarker, brooklynMuseum, brooklynMuseumMarker, theMet, theMetMarker, moma, momaMarker;
 bobstLibrary = L.latLng(40.729444, -73.997222);
 bobstLibraryMarker = L.marker(bobstLibrary).bindPopup("This is Bobst Library.").addTo(firstMap);
 washingtonSquarePark = L.latLng(40.730833, -73.9975);
 washingtonSquareParkMarker = L.marker(washingtonSquarePark).bindPopup("This is Washington Square Park.").addTo(firstMap);
+brooklynMuseum = L.latLng(40.6712, -73.9639);
+brooklynMuseumMarker = L.marker(brooklynMuseum).bindPopup("This is the Brooklyn Museum.").addTo(firstMap);
 theMet = L.latLng(40.7794, -73.9632);
 theMetMarker = L.marker(theMet).bindPopup("This is the Metropolitan Museum of Art.").addTo(firstMap);
 moma = L.latLng(40.7614, -73.9776);
