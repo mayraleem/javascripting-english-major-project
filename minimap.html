@@ -101,148 +101,148 @@ html {
 
 
 <!-- API ACCESS FOR THE MAP -->
-<script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
-<script>
-L.mapbox.accessToken = 'pk.eyJ1IjoibWF5cmFsZWVtIiwiYSI6ImNsMWdnYnpuejB4bGszcXA4ZTJicHl6MnUifQ.f0aZXh8RtSk5ZkV0VnmkEg';
-var map = L.mapbox.map('map', 'mapbox.streets', {
-  container: 'map',
-});
+      <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+      <script>
+      L.mapbox.accessToken = 'pk.eyJ1IjoibWF5cmFsZWVtIiwiYSI6ImNsMWdnYnpuejB4bGszcXA4ZTJicHl6MnUifQ.f0aZXh8RtSk5ZkV0VnmkEg';
+      var map = L.mapbox.map('map', 'mapbox.streets', {
+        container: 'map',
+      });
 
-var myLayer = L.mapbox.featureLayer().addTo(map);
+      var myLayer = L.mapbox.featureLayer().addTo(map);
 
-var geoJson = [{
-    type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-6.395667, 53.983818]},
-    "properties": {
-        'title': 'Molloy Media Archaeology',
-        'marker-color': '#FFFFFF',
-        'marker-symbol': 'circle',
-        'marker-size': 'large',
+      var geoJson = [{
+          type: 'Feature',
+          "geometry": { "type": "Point", "coordinates": [-73.9776, 40.7614]},
+          "properties": {
+              'title': 'Museum of Modern Art',
+              'marker-color': '#E6E6FA',
+              'marker-symbol': 'museum',
+              'marker-size': 'medium',
 
-        // Store the image url and caption in an array.
-        'images': [
-          ['http://molloymediaarchaeology.org/images/droneabove.jpg','You are about to experience an interactive map and <a href="http://molloyenglish.org/omeka-2.4">archive</a> of the Boyne Valley in Northeastern Ireland. The map and <a href="http://molloyenglish.org/omeka-2.4">archive</a> were created in the spring of 2016 by the students of SAP 261 [Media Archaeology] in consultation with <a href="http://mapplega.com">Matt Applegate</a>, <a href="http://www.jamesncohen.com/">Jamie Cohen</a>, <a href="http://margaretdelima.com/home.html">Maraget DeLima</a>, and Destinee Day.'],          ['http://molloymediaarchaeology.org/images/dkitwide.jpg','Students completed this map and archive along with a certificate in <a href="https://www.dkit.ie/news/dkit-unveils-new-programme-certificate-cultural-landscapes-newgrange-boyne-valley">Cultural Landscapes</a> at <a href="https://www.dkit.ie/">DkIT</a>, Dundalk Institute of Technology, led by professor <a href="https://www.dkit.ie/users/dr-conor-brady">Conor Brady</a>.'],
-          ['http://molloymediaarchaeology.org/images/molloylogo.jpg', '<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Molloy Media Archaeology Map & Archive</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://molloymediaarchaeology.org/archive" property="cc:attributionName" rel="cc:attributionURL">SAP 261</a>, led by <a href="http://mapplega.com">Matt Applegate</a>, <a href="http://www.jamesncohen.com/">Jamie Cohen</a>, & <a href="http://margaretdelima.com/home.html">Margaret DeLima</a>, is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. <br><br>Our map is powered by <a href="http://mapbox.com">Mapbox</a> and our archive is powered by <a href="http://omeka.org">Omeka!</a>']
-        ]
-    }
-}, {
-    type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-5.930120, 54.597285]},
-    "properties": {
-        'title': 'Belfast Peace Lines',
-        'marker-color': '#FFFFFF',
-        'marker-symbol': 'city',
-        'marker-size': 'large',
-        'images': [
-          ['https://drive.google.com/uc?id=1pyrWXWSgR-1LxtI9cYtDY_JbOV4Pjm7Z','The Belfast Peace Lines were constructed in 1969 and divided Catholic communities from Protestant ones.'],
-          ['http://molloymediaarchaeology.org/images/peacewall2.jpg','Molloy students visited the peace lines on May 28, 2016.'],
-          ['http://molloymediaarchaeology.org/images/peacewall3.jpg','Students wrote their names and messages on the walls, leaving a mark on the structure. Writing on the walls is a common and important act of memorialization.']
-        ]
-    }
-}, {
-    type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-73.6291694641113, 40.6866260456405]},
-    "properties": {
-        'title': 'Molloy College',
-        'marker-color': '#a01f2c',
-        'marker-symbol': 'college',
-        'marker-size': 'medium',
-        'images': [
-          ['https://upload.wikimedia.org/wikipedia/en/6/61/MolloyCollege_Logo.png','This is where I teach Coding for the Humanities!'],
-          ['https://www.molloy.edu/Images/NMD_Acad_2018.jpg','I love New Media!'],
-          ['https://pbs.twimg.com/media/D1eev5CXQAYm_7x.jpg','Don\'t you?']
-        ]
-    }
-}, {
-    type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-6.2603, 53.349805]},
-    "properties": {
-        'title': 'Dublin, Ireland',
-        'marker-color': '#FFFFFF',
-        'marker-symbol': 'city',
-        'marker-size': 'large',
-        'images': [
-          ['http://molloymediaarchaeology.org/images/dublintown.jpg','Students spent Sunday, May 29 in Dublin, Ireland.'],
-          ['http://molloymediaarchaeology.org/images/jervis.jpg','<iframe width="280" height="195" src="https://www.youtube.com/embed/O31ciXE9tns" frameborder="0" allowfullscreen></iframe>','Students documented what they saw and experienced.']
-        ]
-    }
-}, {
-    type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-6.42425, 53.72220]},
-    "properties": {
-        'title': 'The Memory Sculpture',
-        'marker-color': '#FFD700',
-        'marker-symbol': 'monument',
-        'marker-size': 'medium',
-        'images': [
-          ['http://molloymediaarchaeology.org/images/adriana_memory2.jpg','The Memory Sculpture is another piece kept within the Walled Gardens.'],
-          ['http://molloymediaarchaeology.org/images/grant_pole2.jpg','The sculpture is a remnant of another tree present at the Battle of the Boyne.'],
-          ['http://molloymediaarchaeology.org/images/grant_pole4.jpg','The wooden monument is intended to serve as a reminder to visitors that history never goes away -- it is forever present and forever a part of the people it touches.']
-        ]
-    }
-}];
+              // Store the image url and caption in an array.
+              'images': [
+                ['http://molloymediaarchaeology.org/images/droneabove.jpg','You are about to experience an interactive map and <a href="http://molloyenglish.org/omeka-2.4">archive</a> of the Boyne Valley in Northeastern Ireland. The map and <a href="http://molloyenglish.org/omeka-2.4">archive</a> were created in the spring of 2016 by the students of SAP 261 [Media Archaeology] in consultation with <a href="http://mapplega.com">Matt Applegate</a>, <a href="http://www.jamesncohen.com/">Jamie Cohen</a>, <a href="http://margaretdelima.com/home.html">Maraget DeLima</a>, and Destinee Day.'],          ['http://molloymediaarchaeology.org/images/dkitwide.jpg','Students completed this map and archive along with a certificate in <a href="https://www.dkit.ie/news/dkit-unveils-new-programme-certificate-cultural-landscapes-newgrange-boyne-valley">Cultural Landscapes</a> at <a href="https://www.dkit.ie/">DkIT</a>, Dundalk Institute of Technology, led by professor <a href="https://www.dkit.ie/users/dr-conor-brady">Conor Brady</a>.'],
+                ['http://molloymediaarchaeology.org/images/molloylogo.jpg', '<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Molloy Media Archaeology Map & Archive</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://molloymediaarchaeology.org/archive" property="cc:attributionName" rel="cc:attributionURL">SAP 261</a>, led by <a href="http://mapplega.com">Matt Applegate</a>, <a href="http://www.jamesncohen.com/">Jamie Cohen</a>, & <a href="http://margaretdelima.com/home.html">Margaret DeLima</a>, is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. <br><br>Our map is powered by <a href="http://mapbox.com">Mapbox</a> and our archive is powered by <a href="http://omeka.org">Omeka!</a>']
+              ]
+          }
+      }, {
+          type: 'Feature',
+          "geometry": { "type": "Point", "coordinates": [-73.9636, 40.6712]},
+          "properties": {
+              'title': 'The Brooklyn Museum',
+              'marker-color': '#0096FF',
+              'marker-symbol': 'museum',
+              'marker-size': 'medium',
+              'images': [
+                ['https://mayralee.molloynewmedia.org/images/bmgroup.jpg','I visited the Brooklyn Museum over Spring Break with friends.'],
+                ['https://mayralee.molloynewmedia.org/images/bmfortune.jpg','At the time of my visit, there was an interactive exhibit where patrons could add to the cork sculpture. I left my lucky angel and a fortune that I happened to carry with me.'],
+                ['https://mayralee.molloynewmedia.org/images/bmparty.jpg','My favorite exhibit at the time of my visit was "The Slipstream: Reflection, Resilience, and Resistance in the Art of Our Time."']
+              ]
+          }
+      }, {
+          type: 'Feature',
+          "geometry": { "type": "Point", "coordinates": [-73.9632, 40.7794]},
+          "properties": {
+              'title': 'The Metropolitan Museum of Art',
+              'marker-color': '#E1C699',
+              'marker-symbol': 'museum',
+              'marker-size': 'medium',
+              'images': [
+                ['https://mayralee.molloynewmedia.org/images/influencer.jpeg','The Metropolitan Museum of Art is one of the most popular and most visited museums in the world. Home to a range of art displays dating back to 3700 B.C.'],
+                ['https://mayralee.molloynewmedia.org/images/torso.jpeg','Sculptures, paintings, and fashion are all forms of art that are put on display at The Met. The Met is also often known for a gala that they host every year where fashion is taken to the extreme and garments are then displayed in an exhibit for the upcoming year.'],
+                ['https://mayralee.molloynewmedia.org/images/degas.jpeg','Many world-renowned artist host their art at this museum. Above you\'ll see art by Edgar Degas, who rose to fame with his bronze sculptures. Due to such fame, patrons are often more dressed up when arriving at the Met. The museum also tends to have a posh air about it that is reinforced by the amount of obvious security around every corner.']
+              ]
+          }
+      }, {
+          type: 'Feature',
+          "geometry": { "type": "Point", "coordinates": [-73.9514, 40.7931]},
+          "properties": {
+              'title': 'El Museo del Barrio',
+              'marker-color': '#8B0000',
+              'marker-symbol': 'museum',
+              'marker-size': 'medium',
+              'images': [
+                ['http://molloymediaarchaeology.org/images/dublintown.jpg','Students spent Sunday, May 29 in Dublin, Ireland.'],
+                ['http://molloymediaarchaeology.org/images/jervis.jpg','<iframe width="280" height="195" src="https://www.youtube.com/embed/O31ciXE9tns" frameborder="0" allowfullscreen></iframe>','Students documented what they saw and experienced.']
+              ]
+          }
+      }, {
+          type: 'Feature',
+          "geometry": { "type": "Point", "coordinates": [-73.963607, 40.667814]},
+          "properties": {
+              'title': 'The Brooklyn Botanic Garden',
+              'marker-color': '#FFC0CB',
+              'marker-symbol': 'garden',
+              'marker-size': 'medium',
+              'images': [
+                ['http://mayralee.molloynewmedia.org/images/bonsai.jpeg','The Brooklyn Botanic Garden is an urban botanic garden that connects people to the world of plants, fostering delight and curiosity while inspiring an appreciation and sense of stewarship of the environment.'],
+                ['http://mayralee.molloynewmedia.org/images/sky.jpeg','The ambience of the garden is extremely different to that of the Brooklyn Museum, despite the two locations being directly adjacent to one another. You\'ll find that the people walking the garden are typically more casually dressed. In addition, the garden is obviously seasonal seeing as the plants would not thrive well in harsh winter conditions.'],
+                ['http://mayralee.molloynewmedia.org/images/sauna.jpeg','The Brooklyn Botanic Garden is an excellent spot to visit in early spring when their infamous cherry blossom trees are in bloom.']
+              ]
+          }
+      }];
 
-// Add custom popup html to each marker.
-myLayer.on('layeradd', function(e) {
-    var marker = e.layer;
-    var feature = marker.feature;
-    var images = feature.properties.images
-    var slideshowContent = '';
+      // Add custom popup html to each marker.
+      myLayer.on('layeradd', function(e) {
+          var marker = e.layer;
+          var feature = marker.feature;
+          var images = feature.properties.images
+          var slideshowContent = '';
 
-    for(var i = 0; i < images.length; i++) {
-        var img = images[i];
+          for(var i = 0; i < images.length; i++) {
+              var img = images[i];
 
-        slideshowContent += '<div class="image' + (i === 0 ? ' active' : '') + '">' +
-                              '<img src="' + img[0] + '" />' +
-                              '<div class="caption">' + img[1] + '</div>' +
-                            '</div>';
-    }
+              slideshowContent += '<div class="image' + (i === 0 ? ' active' : '') + '">' +
+                                    '<img src="' + img[0] + '" />' +
+                                    '<div class="caption">' + img[1] + '</div>' +
+                                  '</div>';
+          }
 
-    // Create custom popup content
-    var popupContent =  '<div id="' + feature.properties.id + '" class="popup">' +
-                            '<h2>' + feature.properties.title + '</h2>' +
-                            '<div class="slideshow">' +
-                                slideshowContent +
-                            '</div>' +
-                            '<div class="cycle">' +
-                                '<a href="#" class="prev">&laquo; Previous</a>' +
-                                '<a href="#" class="next">Next &raquo;</a>' +
-                            '</div>'
-                        '</div>';
+          // Create custom popup content
+          var popupContent =  '<div id="' + feature.properties.id + '" class="popup">' +
+                                  '<h2>' + feature.properties.title + '</h2>' +
+                                  '<div class="slideshow">' +
+                                      slideshowContent +
+                                  '</div>' +
+                                  '<div class="cycle">' +
+                                      '<a href="#" class="prev">&laquo; Previous</a>' +
+                                      '<a href="#" class="next">Next &raquo;</a>' +
+                                  '</div>'
+                              '</div>';
 
-    // http://leafletjs.com/reference.html#popup
-    marker.bindPopup(popupContent,{
-        closeButton: false,
-        minWidth: 320
-    });
-});
+          // http://leafletjs.com/reference.html#popup
+          marker.bindPopup(popupContent,{
+              closeButton: false,
+              minWidth: 320
+          });
+      });
 
-// Add features to the map
-myLayer.setGeoJSON(geoJson);
+      // Add features to the map
+      myLayer.setGeoJSON(geoJson);
 
-$('#map').on('click', '.popup .cycle a', function() {
-    var $slideshow = $('.slideshow'),
-        $newSlide;
+      $('#map').on('click', '.popup .cycle a', function() {
+          var $slideshow = $('.slideshow'),
+              $newSlide;
 
-    if ($(this).hasClass('prev')) {
-        $newSlide = $slideshow.find('.active').prev();
-        if ($newSlide.index() < 0) {
-            $newSlide = $('.image').last();
-        }
-    } else {
-        $newSlide = $slideshow.find('.active').next();
-        if ($newSlide.index() < 0) {
-            $newSlide = $('.image').first();
-        }
-    }
+          if ($(this).hasClass('prev')) {
+              $newSlide = $slideshow.find('.active').prev();
+              if ($newSlide.index() < 0) {
+                  $newSlide = $('.image').last();
+              }
+          } else {
+              $newSlide = $slideshow.find('.active').next();
+              if ($newSlide.index() < 0) {
+                  $newSlide = $('.image').first();
+              }
+          }
 
-    $slideshow.find('.active').removeClass('active').hide();
-    $newSlide.addClass('active').show();
-    return false;
-});
+          $slideshow.find('.active').removeClass('active').hide();
+          $newSlide.addClass('active').show();
+          return false;
+      });
 
-<!-- SET THE MAP VIEW HERE -->
-map.setView([41, -74], 8);
+      <!-- SET THE MAP VIEW HERE -->
+      map.setView([40.73, -73.96], 12);
 </script>
 
 
